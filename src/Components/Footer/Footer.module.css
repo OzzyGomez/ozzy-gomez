@@ -1,0 +1,14 @@
+.footer {
+	font-size: 0.8rem;
+}
+
+.social a {
+	color: inherit;
+	margin-left: 1rem;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

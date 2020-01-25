@@ -1,0 +1,23 @@
+/* .bio {
+	background:
+		url(https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)
+		no-repeat center center fixed;
+	background-size: cover;
+} */
+
+.username {
+	margin: 1rem;
+	color: #000000;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.logo {
+	font-size: 12rem;
+}
+
+.card {
+	width: 100%;
+	max-width: 600px;
+	margin-left: auto;
+}

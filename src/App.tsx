@@ -1,24 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+import Home   from './Pages/Home';
+import Music from './Pages/Music';
+import Videos from './Pages/Videos';
+import Photos from './Pages/Photos';
+import Bio from './Pages/Bio';
+import Contact from './Pages/Contact';
 
-const App: React.FC = () => {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+			<Router>
+				<Navbar />
+				<main>
+					<Switch>
+						<Route exact path="/">
+							<Home />
+						</Route>
+						<Route exact path="/music">
+							<Music />
+						</Route>
+						<Route exact path="/videos">
+							<Videos />
+						</Route>
+						<Route exact path="/photos">
+							<Photos />
+						</Route>
+						<Route exact path="/bio">
+							<Bio />
+						</Route>
+						<Route exact path="/contact">
+							<Contact />
+						</Route>
+					</Switch>
+				</main>
+				<Footer />
+			</Router>
     </div>
   );
 }
