@@ -7,7 +7,7 @@ const Home = () => {
 		<div className="text-center">
 			<Container>
 				<div className="page-title m-1">Ozzy Gomez</div>
-				<div className="page-title m-1">@Ozzy on byte</div>
+				<div className="page-title m-1 bold">@Ozzy on byte</div>
 			</Container>
 		</div>
   );

@@ -71,3 +71,7 @@ main > div {
 	font-size: 1.5rem;
 	font-weight: 400;
 }
+
+.bold {
+	font-weight: bold;
+}
