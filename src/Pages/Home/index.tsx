@@ -7,7 +7,7 @@ const Home = () => {
 		<div className="text-center">
 			<Container>
 				<div className="page-title m-1">Ozzy Gomez</div>
-				<Button onClick={() => console.log('hello world')}> Coming Soon </Button>
+				<div className="page-title m-1">@Ozzy on byte</div>
 			</Container>
 		</div>
   );
