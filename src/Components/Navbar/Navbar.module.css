@@ -53,4 +53,8 @@
 	.desktop {
 		display: none;
 	}
+
+	.name {
+		margin-right: 0;
+	}
 }
