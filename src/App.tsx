@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ import Contact from './Pages/Contact';
 const App = () => {
   return (
     <div>
-			<Router>
+			<Router basename="/">
 				<Navbar />
 				<main>
 					<Switch>
