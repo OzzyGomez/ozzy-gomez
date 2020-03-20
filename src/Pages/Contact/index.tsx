@@ -1,15 +1,21 @@
 import React from 'react';
 import Container from '../../Components/Container';
 import Button from '../../Components/Button';
+import Card from '../../Components/Card';
 
 const Contact = () => {
   return (
-		<div className="text-center">
-			<Container>
-				<div className="page-title m-1">Contact</div>
-				<Button onClick={() => console.log('hello world')}> Coming Soon </Button>
-			</Container>
-		</div>
+		<Container>
+			<div className="page-title mb-1">Contact</div>
+			<div className="d-flex">
+				<div className="w-50">
+					<Card>
+						<div className="title mb-1">Email</div>
+						<div className="page-title bold">OzzyGomez94@gmail.com</div>
+					</Card>
+				</div>
+			</div>
+		</Container>
   );
 }
 

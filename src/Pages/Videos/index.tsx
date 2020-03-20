@@ -3,29 +3,54 @@ import Container from '../../Components/Container';
 import Video from '../../Components/Video';
 import classes from './Videos.module.css';
 import Button from '../../Components/Button';
+import Blur from '../../Assets/blur.mov';
+import Stars from '../../Assets/stars.mov';
+import Fruit from '../../Assets/fruit.mov';
 
 const Videos = () => {
   return (
-		<div>
-			<div className="text-center">
-				<Container>
-					<div className="page-title m-1">Videos</div>
-					<Button onClick={() => console.log('hello world')}> Coming Soon </Button>
-				</Container>
+		<Container>
+			<div className="page-title mb-1">Videos</div>
+			<div className="page-subtitle mb-1">A few of my Instagram AR Effects!</div>
+			<div className="d-flex">
+				<div className="w-25 p-1">
+					<Video
+						src={Blur}
+						autoPlay
+						loop
+						muted
+						link="https://www.instagram.com/a/r/?effect_id=204694140903586"
+					/>
+				</div>
+				<div className="w-25 p-1">
+					<Video
+						src={Fruit}
+						autoPlay
+						loop
+						muted
+						link="https://www.instagram.com/a/r/?effect_id=599721214176350"
+					/>
+				</div>
+				<div className="w-25 p-1">
+					<Video
+						src={Stars}
+						autoPlay
+						loop
+						muted
+						link="https://www.instagram.com/a/r/?effect_id=204694140903586"
+					/>
+				</div>
+				<div className="w-25 p-1">
+					<Video
+						src={Stars}
+						autoPlay
+						loop
+						muted
+						link="https://www.instagram.com/a/r/?effect_id=204694140903586"
+					/>
+				</div>
 			</div>
-			{/*<div className={classes.hero}>
-				<Container>
-					<div className="d-flex">
-						<div className="w-50">
-							<Video youtubeUrl="https://www.youtube.com/embed/M7lc1UVf-VE" autoPlay />
-						</div>
-						<div className="w-50">
-
-						</div>
-					</div>
-				</Container>
-			</div>*/}
-		</div>
+		</Container>
   );
 }
 

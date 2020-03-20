@@ -14,7 +14,8 @@ class Navbar extends Component {
 							<Link to="/">OZZY GOMEZ</Link>
 						</div>
 						<nav className={classNames(classes.nav, classes.desktop)}>
-							<a href="https://youtube.com/ozzygomeztv">Videos</a>
+							{/*<a href="https://youtube.com/ozzygomeztv">Videos</a>*/}
+							<Link to="/videos">Videos</Link>
 							<Link to="/music">Music</Link>
 							<a href="https://instagram.com/ozvision">Photos</a>
 							<Link to="/bio">Bio</Link>

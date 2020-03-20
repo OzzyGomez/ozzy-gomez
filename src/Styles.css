@@ -38,6 +38,10 @@ main > div {
 	width: 33.33%;
 }
 
+.w-25 {
+	width: 25%;
+}
+
 .p-1 {
 	padding: 1rem;
 }
@@ -71,6 +75,11 @@ main > div {
 .page-title {
 	font-size: 2rem;
 	font-weight: 400;
+}
+
+.page-subtitle {
+	color: #808080;
+	font-size: 1rem;
 }
 
 .title {

@@ -7,9 +7,10 @@ interface IProps {
 	autoPlay?: boolean;
 	loop?: boolean;
 	muted?: boolean;
+	link?: string;
 }
 
-const Video = ({ src, youtubeUrl, autoPlay, loop, muted }: IProps) => {
+const Video = ({ src, youtubeUrl, autoPlay, loop, muted, link }: IProps) => {
 	if (src) {
 		return (
 			<div className={classes.container}>
@@ -17,6 +18,9 @@ const Video = ({ src, youtubeUrl, autoPlay, loop, muted }: IProps) => {
 					<source src={src} type="video/mp4" />
 					Your browser does not support HTML5 video.
 				</video>
+				{(link) &&
+					<a href={link} className={classes.link}>Check it out</a>
+				}
 			</div>
 		);
 	} else if (youtubeUrl) {
