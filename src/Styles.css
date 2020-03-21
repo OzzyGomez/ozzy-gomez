@@ -54,6 +54,14 @@ main > div {
 	margin-bottom: 1rem;
 }
 
+.d-block {
+	display: block;
+}
+
+.d-none {
+	display: none;
+}
+
 .d-flex {
 	display: flex;
 }

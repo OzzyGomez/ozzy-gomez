@@ -13,9 +13,9 @@ class Footer extends Component {
 					<Link to="/" className={classNames(classes.link, 'w-100')}>
 						<FontAwesomeIcon icon="home" />
 					</Link>
-					<a href="https://www.youtube.com/ozzygomeztv" className={classNames(classes.link, 'w-100')}>
+					<Link to="/videos" className={classNames(classes.link, 'w-100')}>
 						<FontAwesomeIcon icon="film" />
-					</a>
+					</Link>
 					<Link to="/music" className={classNames(classes.link, 'w-100')}>
 						<FontAwesomeIcon icon="music" />
 					</Link>
@@ -28,7 +28,7 @@ class Footer extends Component {
 					<Link to="/contact" className={classNames(classes.link, 'w-100')}>
 						<FontAwesomeIcon icon="address-book" />
 					</Link>
-					<a href="http://ozthreads.com/" className={classNames(classes.link, 'w-100')}>
+					<a href="http://saddestboi.com/" className={classNames(classes.link, 'w-100')}>
 						<FontAwesomeIcon icon="store" />
 					</a>
 				</div>

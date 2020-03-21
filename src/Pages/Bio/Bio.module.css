@@ -5,7 +5,7 @@
 	background-size: cover;
 } */
 
-.username {
+/* .username {
 	margin: 1rem;
 	color: #000000;
 	font-size: 2rem;
@@ -20,4 +20,35 @@
 	width: 100%;
 	max-width: 600px;
 	margin-left: auto;
+} */
+
+
+.container {
+	flex-direction: row;
+	margin-left: -0.5rem;
+	margin-right: -0.5rem;
+}
+
+.item {
+	width: 50%;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+	.container {
+		flex-direction: column;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: -0.5rem;
+		margin-bottom: -0.5rem;
+	}
+
+	.item {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
 }

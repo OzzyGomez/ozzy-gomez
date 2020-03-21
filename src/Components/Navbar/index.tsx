@@ -20,7 +20,7 @@ class Navbar extends Component {
 							<a href="https://instagram.com/ozvision">Photos</a>
 							<Link to="/bio">Bio</Link>
 							<Link to="/contact">Contact</Link>
-							<a href="http://OzThreads.com">Store</a>
+							<a href="http://saddestboi.com">Store</a>
 						</nav>
 					</div>
 				</Container>
