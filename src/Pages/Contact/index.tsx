@@ -11,7 +11,7 @@ const Contact = () => {
 				<div className="w-50">
 					<Card>
 						<div className="title mb-1">Email</div>
-						<div className="page-title bold">OzzyGomez94@gmail.com</div>
+						<p>OzzyGomez94@gmail.com</p>
 					</Card>
 				</div>
 			</div>
