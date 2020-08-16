@@ -5,17 +5,12 @@ import Card from '../../Components/Card';
 
 const Contact = () => {
   return (
-		<Container>
-			<div className="page-title mb-1">Contact</div>
-			<div className="d-flex">
-				<div className="w-50">
-					<Card>
-						<div className="title mb-1">Email</div>
-						<p>OzzyGomez94@gmail.com</p>
-					</Card>
-				</div>
-			</div>
-		</Container>
+		<div className="text-center">
+			<Container>
+				<div className="page-title m-1">Contact</div>
+				<Button onClick={() => console.log('hello world')}> Coming Soon </Button>
+			</Container>
+		</div>
   );
 }
 

@@ -17,7 +17,7 @@ class Navbar extends Component {
 							{/*<a href="https://youtube.com/ozzygomeztv">Videos</a>*/}
 							<Link to="/videos">Videos</Link>
 							<Link to="/music">Music</Link>
-							<a href="https://instagram.com/ozvision">Photos</a>
+							<Link to="/photos">Photos</Link>
 							<Link to="/bio">Bio</Link>
 							<Link to="/contact">Contact</Link>
 							<a href="http://saddestboi.com">Store</a>
