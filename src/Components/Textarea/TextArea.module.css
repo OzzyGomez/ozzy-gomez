@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  padding: 20px 8px 8px 8px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  font-size: 13px;
+}
+
+.textarea {
+  border-radius: 0px;
+  border: none;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.textarea:focus {
+  outline: none;
+}

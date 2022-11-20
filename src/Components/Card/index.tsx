@@ -1,21 +1,17 @@
-import React from 'react';
-import classes from './Card.module.css';
-import classNames from 'classnames';
+import React, { FC, HTMLProps } from "react";
+import classes from "./Card.module.css";
+import classNames from "classnames";
 
-interface IProps {
-	className?: string;
-	children: any;
-	noPadding?: boolean;
+interface CardProps extends HTMLProps<HTMLDivElement> {
+  noPadding?: boolean;
 }
 
-const Card = ({ children, className, noPadding }: IProps) => {
+const Card: FC<CardProps> = ({ children, className, noPadding, ...props }) => {
   return (
-		<div className={classNames(classes.card, className)}>
-			<div className={classNames({ 'p-1': !noPadding })}>
-				{children}
-			</div>
-		</div>
+    <div className={classNames(classes.card, className)} {...props}>
+      <div className={classNames({ "p-4": !noPadding })}>{children}</div>
+    </div>
   );
-}
+};
 
 export default Card;

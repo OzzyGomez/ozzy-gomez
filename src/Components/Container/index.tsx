@@ -1,27 +1,33 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
-import classes from './Container.module.css';
+import React, { Component, FC, HTMLProps } from "react";
+import classNames from "classnames";
+import classes from "./Container.module.css";
 
-interface IProps {
-	width?: 'xl' | 'lg' | 'md' | 'sm' | 'xs';
-	children: any;
-	className?: string;
-	noPadding?: boolean;
+interface ContainerProps extends HTMLProps<HTMLDivElement> {
+  width?: "xl" | "lg" | "md" | "sm" | "xs";
+  noPadding?: boolean;
 }
 
-class Container extends Component<IProps> {
-	public render() {
-		const { width, children, className, noPadding } = this.props;
-		return (
-			<div className={classNames(classes.container, className, classes[width || 'lg'])}>
-				<div className="h-100">
-					<div className="p-1">
-						{children}
-					</div>
-				</div>
-			</div>
-		);
-	}
-}
+const Container: FC<ContainerProps> = ({
+  width,
+  children,
+  className,
+  noPadding,
+  ...props
+}) => {
+  return (
+    <div
+      className={classNames(
+        classes.container,
+        className,
+        classes[width || "lg"]
+      )}
+      {...props}
+    >
+      <div className="h-full">
+        <div className="p-4">{children}</div>
+      </div>
+    </div>
+  );
+};
 
 export default Container;
