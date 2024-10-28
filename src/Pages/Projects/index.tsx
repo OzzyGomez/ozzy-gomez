@@ -14,6 +14,7 @@ const Projects = () => {
             image={info.image}
             aspectRatio={1}
             title={info.title}
+            subtitle={info.subtitle}
           />
         ))}
       </div>

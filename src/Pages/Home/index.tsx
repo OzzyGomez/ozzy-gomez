@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Home.module.css';
 import Footer from '../../Components/Footer';
 import PageTitle from '../../Components/PageTitle';
+import Page from '../../Components/Page';
 
 const Home = () => {
   return (
@@ -20,12 +21,13 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-1 flex-col mx-10">
-          <div className="flex-1 mt-10">
+        <Page titlePosition="start" />
+        {/* <div className="flex flex-1 flex-col container p-8">
+          <div className="flex-1">
             <PageTitle title="OZZY GOMEZ" className="self-start" />
           </div>
-          <Footer className="my-4" />
-        </div>
+          <Footer />
+        </div> */}
       </div>
     </div>
   );

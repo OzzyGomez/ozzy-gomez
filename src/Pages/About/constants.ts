@@ -1,19 +1,18 @@
-import RunningImage from '../../Assets/IMG_5453.jpeg';
+import LakeRunImage from '../../Assets/lake-run.jpeg';
 
 export const tiles = [
   {
-    title: 'Running',
-    description: 'I love running',
-    image: RunningImage,
+    title: 'Runner',
+    image: LakeRunImage,
   },
-  {
-    title: 'Artist',
-    description: 'I love creating',
-    image: RunningImage,
-  },
-  {
-    title: 'Engineer',
-    description: 'I love music',
-    image: RunningImage,
-  },
+  // {
+  //   title: 'Filmmaker',
+  //   description: 'I love creating',
+  //   image: LakeRunImage,
+  // },
+  // {
+  //   title: 'Engineer',
+  //   description: 'I love music',
+  //   image: LakeRunImage,
+  // },
 ];

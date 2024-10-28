@@ -3,19 +3,30 @@ import PageTitle from '../PageTitle';
 import Footer from '../Footer';
 import clsx from 'clsx';
 
-interface PageProps extends HTMLProps<HTMLDivElement> {}
+interface PageProps extends HTMLProps<HTMLDivElement> {
+  titlePosition?: 'center' | 'start' | 'end';
+}
 
-const Page = ({ children, className, ...props }: PageProps) => {
+const Page = ({
+  children,
+  className,
+  titlePosition = 'center',
+  ...props
+}: PageProps) => {
   return (
-    <div className={clsx(className, 'py-16')} {...props}>
-      <div className="container flex flex-col gap-16">
-        <PageTitle
-          title="OZZY GOMEZ"
-          className="text-black self-center text-center"
-        />
-        <div className="min-h-screen">{children}</div>
-        <Footer />
-      </div>
+    <div
+      className={clsx(
+        className,
+        'container flex flex-col gap-16 py-8  min-h-screen'
+      )}
+      {...props}
+    >
+      <PageTitle
+        title="OZZY GOMEZ"
+        className={`text-black self-${titlePosition} text-center`}
+      />
+      <div className="flex-1">{children}</div>
+      <Footer />
     </div>
   );
 };

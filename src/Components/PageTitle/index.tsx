@@ -10,12 +10,12 @@ export interface PageTitleProps extends HTMLProps<HTMLDivElement> {
 const PageTitle = ({ title, className, ...props }: PageTitleProps) => {
   return (
     <div
-      className={clsx(className, 'inline-flex flex-col items-start gap-4')}
+      className={clsx(className, 'inline-flex flex-col items-center gap-4')}
       {...props}
     >
       <div>
         <Link to="/">
-          <div className="font-light tracking-widest text-inherit text-3xl sm:text-5xl">
+          <div className="font-light tracking-widest text-inherit text-3xl sm:text-5xl hover:opacity-50">
             {title}
           </div>
         </Link>
