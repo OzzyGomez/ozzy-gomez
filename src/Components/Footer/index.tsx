@@ -1,71 +1,35 @@
-import React, { FC, HTMLProps } from "react";
-import classes from "./Footer.module.css";
-import Container from "../Container";
-import classNames from "classnames";
-import { Link } from "react-router-dom";
-import {
-  FiFilm,
-  FiHome,
-  FiImage,
-  FiInstagram,
-  FiMail,
-  FiMusic,
-  FiTwitter,
-  FiUser,
-  FiYoutube,
-} from "react-icons/fi";
-import { MdOutlineFastfood } from "react-icons/md";
+import React, { HTMLProps } from 'react';
+import clsx from 'clsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 interface FooterProps extends HTMLProps<HTMLDivElement> {}
 
-const Footer: FC<FooterProps> = ({ className, ...props }) => {
+const Footer = ({ className, ...props }: FooterProps) => {
   return (
-    <footer
-      className={classNames("text-center", className, classes.footer)}
-      {...props}
-    >
-      <div className={classNames(classes.menu, classes.mobile, "flex")}>
-        <Link to="/" className={classNames(classes.link, "w-full")}>
-          <FiHome />
-        </Link>
-        <Link to="/recipes" className={classNames(classes.link, "w-full")}>
-          <MdOutlineFastfood />
-        </Link>
-        <Link to="/videos" className={classNames(classes.link, "w-full")}>
-          <FiFilm />
-        </Link>
-        <Link to="/music" className={classNames(classes.link, "w-full")}>
-          <FiMusic />
-        </Link>
-        <a
-          href="https://www.instagram.com/ozvision"
-          className={classNames(classes.link, "w-full")}
-        >
-          <FiImage />
-        </a>
-        <Link to="/bio" className={classNames(classes.link, "w-full")}>
-          <FiUser />
-        </Link>
-        <Link to="/contact" className={classNames(classes.link, "w-full")}>
-          <FiMail />
-        </Link>
-      </div>
-      <Container>
-        <div className={classes.container}>
-          <div>&copy; 2020 Ozzy Gomez</div>
-          <div className={classNames(classes.social, "flex")}>
-            <a href="https://youtube.com/ozzygomeztv">
-              <FiYoutube />
+    <footer className={clsx(className, 'text-center font-lg')} {...props}>
+      <div>
+        <div className="flex justify-between items-center">
+          <div>&copy; {new Date().getFullYear()} Ozzy Gomez</div>
+          <div className="flex gap-6">
+            <Link className="" to="/contact">
+              <FontAwesomeIcon icon="envelope" size="lg" />
+            </Link>
+            <a href="https://www.strava.com/athletes/61524944" title="Strava">
+              <FontAwesomeIcon icon={['fab', 'strava']} size="lg" />
             </a>
-            <a href="https://instagram.com/ozvision">
-              <FiInstagram />
+            <a href="https://youtube.com/ozzygomeztv" title="YouTube">
+              <FontAwesomeIcon icon={['fab', 'youtube']} size="lg" />
             </a>
-            <a href="https://twitter.com/ozzygomez">
-              <FiTwitter />
+            <a href="https://instagram.com/ozvision" title="Instagram">
+              <FontAwesomeIcon icon={['fab', 'instagram']} size="lg" />
+            </a>
+            <a href="https://tiktok.com/@ozzygomez" title="TikTok">
+              <FontAwesomeIcon icon={['fab', 'tiktok']} size="lg" />
             </a>
           </div>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 };

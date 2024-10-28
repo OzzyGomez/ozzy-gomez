@@ -1,15 +1,12 @@
-import React from "react";
-import Container from "../../Components/Container";
-import Button from "../../Components/Button";
+import React from 'react';
+import Page from '../../Components/Page';
 
 const Music = () => {
   return (
-    <div className="text-center">
-      <Container>
-        <div className="page-title m-4">Music</div>
-        <Button onClick={() => console.log("hello world")}>Coming Soon</Button>
-      </Container>
-    </div>
+    <Page className="text-center">
+      <h2 className="text-2xl">Music</h2>
+      <h3>Coming Soon</h3>
+    </Page>
   );
 };
 

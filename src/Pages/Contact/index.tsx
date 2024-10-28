@@ -1,30 +1,31 @@
-import React from "react";
-import classes from "./Contact.module.css";
-import Container from "../../Components/Container";
-import Button from "../../Components/Button";
-import Card from "../../Components/Card";
-import Input from "../../Components/Input";
-import TextArea from "../../Components/Textarea";
+import React from 'react';
+import Page from '../../Components/Page';
+
+const ContactInfo = [
+  {
+    label: 'BUSINESS INQUIRIES',
+    value: 'business@ozzygomez.com',
+  },
+  {
+    label: 'OTHER',
+    value: 'other@ozzygomez.com',
+  },
+];
 
 const Contact = () => {
   return (
-    <div>
-      <Container>
-        <div className="page-title mb-4">Contact</div>
-        <div className={classes.container}>
-          <div className={classes.left}>
-            <Card>
-              <p className="mb-4">Send me an message! Don't me weird.</p>
-              <Input label="Name" className="mb-4" />
-              <Input label="Email" className="mb-4" />
-              <TextArea label="Message" className="mb-4" />
-              <Button>Send</Button>
-            </Card>
-          </div>
-          <div className={classes.right}></div>
+    <Page>
+      <div className="flex flex-1">
+        <div className="flex flex-1 flex-col justify-center items-center gap-10">
+          {ContactInfo.map((info) => (
+            <div className="flex flex-col items-center">
+              <div className="font-light text-black text-xl">{info.label}</div>
+              <div className="font-light text-3xl">{info.value}</div>
+            </div>
+          ))}
         </div>
-      </Container>
-    </div>
+      </div>
+    </Page>
   );
 };
 
