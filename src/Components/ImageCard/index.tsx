@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React, { HTMLProps } from 'react';
 import { Link, LinkProps } from 'react-router-dom';
 
@@ -15,11 +16,15 @@ const ImageCard = ({
   subtitle,
   to,
   aspectRatio = 4 / 5,
+  className,
   ...props
 }: ImageCardProps) => {
   const ImageCardBase = (
     <div
-      className="rounded-3xl p-4 flex flex-col justify-end items-start"
+      className={clsx(
+        className,
+        'rounded-3xl p-4 flex flex-col justify-end items-start'
+      )}
       style={{
         background: `url(${image}) no-repeat center center/cover`,
         aspectRatio,
