@@ -6,13 +6,14 @@ import MoonImage from '../../Assets/moon.jpeg';
 const Home = () => {
   return (
     <div>
+      {/* TODO: delete when video is added */}
       <div
-        className="relative h-screen w-screen overflow-hidden flex"
-        // TODO: delete when video is added
+        className="fixed top-0 left-0 w-screen h-screen -z-50"
         style={{
           background: `url(${MoonImage}) no-repeat center center/cover `,
         }}
-      >
+      />
+      <div className="relative h-screen w-screen overflow-hidden flex">
         {/* <div className={classes['video-background']}>
           <div className={classes['video-foreground']}>
             <iframe
