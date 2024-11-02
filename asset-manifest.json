@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b35414f1.css",
-    "main.js": "/static/js/main.8ccfd6a6.js",
+    "main.css": "/static/css/main.490f32fa.css",
+    "main.js": "/static/js/main.122cce5f.js",
     "static/js/488.90238033.chunk.js": "/static/js/488.90238033.chunk.js",
     "static/media/nike-run.jpeg": "/static/media/nike-run.b7987368f055ceabf200.jpeg",
     "static/media/chicago.jpg": "/static/media/chicago.93b7b34aabd0def27a55.jpg",
@@ -13,12 +13,12 @@
     "static/media/sonic.gif": "/static/media/sonic.04a9f517ad06fe924b66.gif",
     "static/media/blackandwhite.jpg": "/static/media/blackandwhite.8c0b984e6a70c4ce0347.jpg",
     "index.html": "/index.html",
-    "main.b35414f1.css.map": "/static/css/main.b35414f1.css.map",
-    "main.8ccfd6a6.js.map": "/static/js/main.8ccfd6a6.js.map",
+    "main.490f32fa.css.map": "/static/css/main.490f32fa.css.map",
+    "main.122cce5f.js.map": "/static/js/main.122cce5f.js.map",
     "488.90238033.chunk.js.map": "/static/js/488.90238033.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b35414f1.css",
-    "static/js/main.8ccfd6a6.js"
+    "static/css/main.490f32fa.css",
+    "static/js/main.122cce5f.js"
   ]
 }
