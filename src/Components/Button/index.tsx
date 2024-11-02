@@ -9,6 +9,7 @@ export interface ButtonProps
   size?: 'lg' | 'md' | 'sm';
   type?: 'button' | 'submit' | 'reset';
   to?: LinkProps['to'];
+  color?: 'black' | 'white';
 }
 
 const Button: FC<ButtonProps> & { Icon: FC<IconButtonProps> } = ({
@@ -16,6 +17,7 @@ const Button: FC<ButtonProps> & { Icon: FC<IconButtonProps> } = ({
   type = 'button',
   className,
   to,
+  color = 'black',
   ...props
 }) => {
   const buttonBase = (
@@ -24,7 +26,7 @@ const Button: FC<ButtonProps> & { Icon: FC<IconButtonProps> } = ({
       className={clsx(
         className,
         [classes[size]],
-        'btn border-2 border-black p-2 hover:opacity-50'
+        `btn border-2 border-${color} text-${color} p-2 hover:opacity-50`
       )}
       {...props}
     />

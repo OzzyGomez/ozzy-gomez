@@ -13,8 +13,8 @@ const ChicagoRankings = () => {
         title="My Chicago Rankings"
         subtitle="List of my favorite things in Chicago ranked. Subject to change.
           Starting Fresh from 2024."
-        aspectRatio={8 / 2}
-        className="mb-8"
+        aspectRatio="unset"
+        className="mb-8 h-52"
       />
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
         {lists.map((list) => (

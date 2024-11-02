@@ -5,9 +5,10 @@ import Button from '../Button';
 
 export interface PageTitleProps extends HTMLProps<HTMLDivElement> {
   title: string;
+  color?: 'black' | 'white';
 }
 
-const PageTitle = ({ title, className, ...props }: PageTitleProps) => {
+const PageTitle = ({ title, color, className, ...props }: PageTitleProps) => {
   return (
     <div
       className={clsx(className, 'inline-flex flex-col items-center gap-4')}
@@ -22,17 +23,17 @@ const PageTitle = ({ title, className, ...props }: PageTitleProps) => {
       </div>
       <div className="flex w-full gap-2">
         <div className="flex-1">
-          <Button size="sm" className="w-full" to="/about">
+          <Button size="sm" className="w-full" to="/about" color={color}>
             About
           </Button>
         </div>
         <div className="flex-1">
-          <Button size="sm" className="w-full" to="/projects">
+          <Button size="sm" className="w-full" to="/projects" color={color}>
             Projects
           </Button>
         </div>
         <div className="flex-1">
-          <Button size="sm" className="w-full" to="/contact">
+          <Button size="sm" className="w-full" to="/contact" color={color}>
             Contact
           </Button>
         </div>

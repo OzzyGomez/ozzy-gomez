@@ -1,14 +1,19 @@
 import React from 'react';
-import classes from './Home.module.css';
-import Footer from '../../Components/Footer';
-import PageTitle from '../../Components/PageTitle';
+// import classes from './Home.module.css';
 import Page from '../../Components/Page';
+import MoonImage from '../../Assets/moon.jpeg';
 
 const Home = () => {
   return (
     <div>
-      <div className="relative h-screen w-screen overflow-hidden flex">
-        <div className={classes['video-background']}>
+      <div
+        className="relative h-screen w-screen overflow-hidden flex"
+        // TODO: delete when video is added
+        style={{
+          background: `url(${MoonImage}) no-repeat center center/cover `,
+        }}
+      >
+        {/* <div className={classes['video-background']}>
           <div className={classes['video-foreground']}>
             <iframe
               width="560"
@@ -20,14 +25,8 @@ const Home = () => {
               allowFullScreen
             />
           </div>
-        </div>
-        <Page titlePosition="start" />
-        {/* <div className="flex flex-1 flex-col container p-8">
-          <div className="flex-1">
-            <PageTitle title="OZZY GOMEZ" className="self-start" />
-          </div>
-          <Footer />
         </div> */}
+        <Page titlePosition="start" color="white" />
       </div>
     </div>
   );

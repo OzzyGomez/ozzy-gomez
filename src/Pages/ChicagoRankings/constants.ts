@@ -47,6 +47,10 @@ export const lists: List[] = [
         name: 'Chicago Lakefront Trail',
         link: 'https://www.chicagoparkdistrict.com/parks-facilities/lakefront-trail',
       },
+      {
+        name: 'The 606',
+        link: 'https://www.the606.org/',
+      },
     ],
   },
   // {
