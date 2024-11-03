@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ef255b5b.css",
-    "main.js": "/static/js/main.945ea11b.js",
+    "main.js": "/static/js/main.6db09a46.js",
     "static/js/488.90238033.chunk.js": "/static/js/488.90238033.chunk.js",
     "static/media/nike-run.jpeg": "/static/media/nike-run.b7987368f055ceabf200.jpeg",
     "static/media/chicago.jpg": "/static/media/chicago.93b7b34aabd0def27a55.jpg",
@@ -12,13 +12,14 @@
     "static/media/chicagodowntownchristmas.jpg": "/static/media/chicagodowntownchristmas.203b342a5608fc0f3258.jpg",
     "static/media/sonic.gif": "/static/media/sonic.04a9f517ad06fe924b66.gif",
     "static/media/blackandwhite.jpg": "/static/media/blackandwhite.8c0b984e6a70c4ce0347.jpg",
+    "static/media/los-guapos.jpeg": "/static/media/los-guapos.115378159a4fb3e42408.jpeg",
     "index.html": "/index.html",
     "main.ef255b5b.css.map": "/static/css/main.ef255b5b.css.map",
-    "main.945ea11b.js.map": "/static/js/main.945ea11b.js.map",
+    "main.6db09a46.js.map": "/static/js/main.6db09a46.js.map",
     "488.90238033.chunk.js.map": "/static/js/488.90238033.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef255b5b.css",
-    "static/js/main.945ea11b.js"
+    "static/js/main.6db09a46.js"
   ]
 }
