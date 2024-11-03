@@ -38,7 +38,7 @@ const ImageCard = ({
         <h3 className="font-light text-neutral-200 italic">{subtitle}</h3>
       )}
       {description && (
-        <div className="hidden absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 group-hover:flex justify-center items-center text-white">
+        <div className="p-4 hidden absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 group-hover:flex justify-center items-center text-white">
           {description}
         </div>
       )}

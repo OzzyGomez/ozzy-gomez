@@ -9,7 +9,7 @@ const Footer = ({ className, ...props }: FooterProps) => {
   return (
     <footer className={clsx(className, 'text-center font-lg')} {...props}>
       <div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col-reverse sm:flex-row gap-2 sm:gap-0">
           <div>&copy; {new Date().getFullYear()} Ozzy Gomez</div>
           <div className="flex gap-6">
             <Link className="" to="/contact">

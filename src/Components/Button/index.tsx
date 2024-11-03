@@ -26,7 +26,8 @@ const Button: FC<ButtonProps> & { Icon: FC<IconButtonProps> } = ({
       className={clsx(
         className,
         [classes[size]],
-        `btn border-2 border-${color} text-${color} p-2 hover:opacity-50`
+        getButtonColor(color),
+        `btn border-2 p-2 hover:opacity-50`
       )}
       {...props}
     />
@@ -36,5 +37,16 @@ const Button: FC<ButtonProps> & { Icon: FC<IconButtonProps> } = ({
 };
 
 Button.Icon = IconButton;
+
+const getButtonColor = (color: ButtonProps['color']) => {
+  switch (color) {
+    case 'black':
+      return 'text-black border-black';
+    case 'white':
+      return 'text-white border-white';
+    default:
+      return 'text-black border-black';
+  }
+};
 
 export default Button;

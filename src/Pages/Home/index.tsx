@@ -13,7 +13,7 @@ const Home = () => {
           background: `url(${MoonImage}) no-repeat center center/cover `,
         }}
       />
-      <div className="relative h-screen w-screen overflow-hidden flex">
+      <div className="relative h-dvh w-dvh overflow-hidden flex">
         {/* <div className={classes['video-background']}>
           <div className={classes['video-foreground']}>
             <iframe
@@ -27,7 +27,7 @@ const Home = () => {
             />
           </div>
         </div> */}
-        <Page titlePosition="start" color="white" />
+        <Page titlePosition="left" color="white" />
       </div>
     </div>
   );
