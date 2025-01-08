@@ -28,6 +28,11 @@ const PageTitle = ({ title, color, className, ...props }: PageTitleProps) => {
           </Button>
         </div>
         <div className="flex-1">
+          <Button size="sm" className="w-full" to="/photos" color={color}>
+            Photos
+          </Button>
+        </div>
+        <div className="flex-1">
           <Button size="sm" className="w-full" to="/projects" color={color}>
             Projects
           </Button>

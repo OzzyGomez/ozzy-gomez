@@ -1,16 +1,16 @@
 import React from 'react';
 import Page from '../../Components/Page';
-import ImageCard from '../../Components/ImageCard';
-import { tiles } from './constants';
+// import ImageCard from '../../Components/ImageCard';
+// import { tiles } from './constants';
 
 const Projects = () => {
   return (
     <Page>
       <div className="flex flex-col gap-16">
         <div className="text-center">
-          <p>A list of project I'm working on. Will add more soon!</p>
+          <p>Coming Soon</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {tiles.map((info, index) => (
             <ImageCard
               key={index}
@@ -21,7 +21,7 @@ const Projects = () => {
               subtitle={info.subtitle}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </Page>
   );

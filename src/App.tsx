@@ -63,12 +63,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/photos" element={<Photos />} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/music" element={<Music />} />
         <Route path="/projects/videos" element={<Videos />} />
-        <Route path="/projects/photos" element={<Photos />} />
         <Route path="/projects/recipes" element={<Recipes />} />
         <Route path="/projects/recipe/:id" element={<Recipe />} />
         <Route
